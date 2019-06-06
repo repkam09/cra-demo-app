@@ -3,8 +3,8 @@ import "./ExampleComponent.css";
 
 class ExampleFormComponent extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = { count: 0 };
         this.countUpButtonHandler = this.countUpButton.bind(this);

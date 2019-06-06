@@ -3,8 +3,8 @@ import "./ExampleComponent.css";
 
 class ExampleDynamicComponent extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         // Hook up (or bind) 'this' so we can call setState from the event handler, if needed
         this.handleOptionClickedEvent = this.handleOptionClicked.bind(this);
@@ -55,7 +55,7 @@ class ExampleDynamicComponent extends React.Component {
         // Create the actual final page layou, just a wrapper, a title, and the list of files.
         return (
             <div className="example-wrapper example-stateless-component">
-        <h3>ExampleDynamicComponent.js</h3>
+                <h3>ExampleDynamicComponent.js</h3>
                 {apiresults}
             </div>
         )
