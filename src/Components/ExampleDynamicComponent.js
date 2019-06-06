@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ExampleComponent.css";
 
 class ExampleDynamicComponent extends React.Component {
 
@@ -53,10 +54,8 @@ class ExampleDynamicComponent extends React.Component {
 
         // Create the actual final page layou, just a wrapper, a title, and the list of files.
         return (
-            <div className="dynamic-list-wrapper">
-                <h3>
-                    Movie List
-                </h3>
+            <div className="example-wrapper example-stateless-component">
+        <h3>ExampleDynamicComponent.js</h3>
                 {apiresults}
             </div>
         )

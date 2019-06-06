@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ExampleComponent.css";
 
 /**
  * This is the most simple type of component you can make. 
@@ -8,7 +9,8 @@ import React from 'react';
  */
 const ExampleStatelessComponent = (props) => {
     return (
-        <div>
+        <div className="example-wrapper example-stateless-component">
+        <h3>ExampleStatelessComponent.js</h3>
             <span>Hello, {props.name}</span>
         </div>
     );

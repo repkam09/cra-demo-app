@@ -3,7 +3,7 @@ import './App.css';
 import ExampleFormComponent from "./Components/ExampleFormComponent";
 import ExampleStatelessComponent from "./Components/ExampleStatelessComponent";
 import ExampleDynamicComponent from "./Components/ExampleDynamicComponent";
-
+import ExampleButtonComponent from "./Components/ExampleButtonComponent";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <ExampleFormComponent />
         <ExampleStatelessComponent name="Mark" />
         <ExampleDynamicComponent />
+        <ExampleButtonComponent />
       </div>
       <footer>
 
